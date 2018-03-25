@@ -1,4 +1,4 @@
-node('node) {
+node('node') {
   stage 'Checkout'
         checkout scm
   stage 'Test'
@@ -19,5 +19,4 @@ node('node) {
                     replyTo: 'thunt@citrusoft.com',
                     subject: 'project build successful',
                     to: 'thunt@citrusoft.com'
-  }
 }
